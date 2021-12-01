@@ -58,9 +58,9 @@ exports.buildWallet = async (Wallets, walletPath) => {
 
 exports.prettyJSONString = (inputString) => {
 	if (inputString) {
-		 return JSON.stringify(JSON.parse(inputString), null, 2);
+		return JSON.stringify(JSON.parse(inputString), null, 2);
 	}
 	else {
-		 return inputString;
+		return inputString;
 	}
 }
