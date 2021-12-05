@@ -59,7 +59,7 @@ const invokeTransaction = async (channelName, chaincodeName, fcn, args, username
             console.log(args[0], args[1])
             result = await contract.submitTransaction(fcn, args[0], args[1]);
             console.log(result)
-            message = `Successfully added the car asset with key ${args[0]}`
+            message = `Successfully added the asset with key ${args[0]}`
 
         } else if (fcn === "query") {
             console.log(args[0])
@@ -83,7 +83,7 @@ const invokeTransaction = async (channelName, chaincodeName, fcn, args, username
             console.log(args[0], args[1])
             result = await contract.submitTransaction(fcn, args[0], args[1]);
             console.log(result)
-            message = `Successfully update the asset with key ${args[0]}`
+            message = `Successfully updated the asset with key ${args[0]}`
 
         }
         else {
@@ -96,9 +96,9 @@ const invokeTransaction = async (channelName, chaincodeName, fcn, args, username
             result = "NIL";
         } else {
 
-            console.log("hello", result.toString())
+            // console.log("hello", result.toString())
             result = JSON.parse(result.toString());
-            console.log("hello", result)
+            // console.log("hello", result)
         }
 
 
@@ -106,7 +106,7 @@ const invokeTransaction = async (channelName, chaincodeName, fcn, args, username
             message: message,
             result: result
         }
-        console.log("hello", response)
+        // console.log("hello", response)
         return response;
 
 

@@ -24,3 +24,8 @@ external-chaincode/
 # Eclipse
 .classpath
 .settings
+
+
+delete/
+front-end/fyp/node_modules/
+test-network/app/api-2.0/node_modules/
