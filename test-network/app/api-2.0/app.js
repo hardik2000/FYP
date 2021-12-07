@@ -114,43 +114,6 @@ app.post('/users', async function (req, res) {
 
 });
 
-// Register and enroll user
-app.post('/register', async function (req, res) {
-    var username = req.body.username;
-    var orgName = req.body.orgName;
-    logger.debug('End point : /users');
-    logger.debug('User name : ' + username);
-    logger.debug('Org name  : ' + orgName);
-    if (!username) {
-        res.json(getErrorMessage('\'username\''));
-        return;
-    }
-    if (!orgName) {
-        res.json(getErrorMessage('\'orgName\''));
-        return;
-    }
-
-    var token = jwt.sign({
-        exp: Math.floor(Date.now() / 1000) + parseInt(constants.jwt_expiretime),
-        username: username,
-        orgName: orgName
-    }, app.get('secret'));
-
-    console.log(token)
-
-    let response = await helper.registerAndGerSecret(username, orgName);
-
-    logger.debug('-- returned from registering the username %s for organization %s', username, orgName);
-    if (response && typeof response !== 'string') {
-        logger.debug('Successfully registered the username %s for organization %s', username, orgName);
-        response.token = token;
-        res.json(response);
-    } else {
-        logger.debug('Failed to register the username %s for organization %s with::%s', username, orgName, response);
-        res.json({ success: false, message: response });
-    }
-
-});
 
 // Login and get jwt
 app.post('/users/login', async function (req, res) {
@@ -348,3 +311,44 @@ app.get('/qscc/channels/:channelName/chaincodes/:chaincodeName', async function 
         res.send(response_payload)
     }
 });
+
+
+
+
+// Register and enroll user
+// app.post('/register', async function (req, res) {
+//     var username = req.body.username;
+//     var orgName = req.body.orgName;
+//     logger.debug('End point : /users');
+//     logger.debug('User name : ' + username);
+//     logger.debug('Org name  : ' + orgName);
+//     if (!username) {
+//         res.json(getErrorMessage('\'username\''));
+//         return;
+//     }
+//     if (!orgName) {
+//         res.json(getErrorMessage('\'orgName\''));
+//         return;
+//     }
+
+//     var token = jwt.sign({
+//         exp: Math.floor(Date.now() / 1000) + parseInt(constants.jwt_expiretime),
+//         username: username,
+//         orgName: orgName
+//     }, app.get('secret'));
+
+//     console.log(token)
+
+//     let response = await helper.registerAndGerSecret(username, orgName);
+
+//     logger.debug('-- returned from registering the username %s for organization %s', username, orgName);
+//     if (response && typeof response !== 'string') {
+//         logger.debug('Successfully registered the username %s for organization %s', username, orgName);
+//         response.token = token;
+//         res.json(response);
+//     } else {
+//         logger.debug('Failed to register the username %s for organization %s with::%s', username, orgName, response);
+//         res.json({ success: false, message: response });
+//     }
+
+// });
