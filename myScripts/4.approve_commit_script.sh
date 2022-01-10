@@ -1,0 +1,4 @@
+source myScripts/./export_script.sh
+# peer lifecycle chaincode approveformyorg  -o 127.0.0.1:7050 --channelID ch1 --name mycc1 --version 2.1 --sequence 6 --init-required --signature-policy "OR ('SampleOrg.member')" --package-id mycc1:2.1
+peer lifecycle chaincode checkcommitreadiness -o 127.0.0.1:7050 --channelID ch1 --name mycc1 --version 2.1 --sequence 6 --init-required --signature-policy "OR ('SampleOrg.member')"
+# peer lifecycle chaincode commit -o 127.0.0.1:7050 --channelID ch1 --name mycc1 --version 2.1 --sequence 6 --init-required --signature-policy "OR ('SampleOrg.member')" --peerAddresses 127.0.0.1:7051

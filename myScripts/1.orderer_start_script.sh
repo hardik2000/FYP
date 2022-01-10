@@ -1,0 +1,1 @@
+ORDERER_GENERAL_GENESISPROFILE=SampleDevModeSolo orderer

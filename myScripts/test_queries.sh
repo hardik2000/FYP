@@ -1,0 +1,7 @@
+# CORE_PEER_ADDRESS=127.0.0.1:7051 peer chaincode invoke -o 127.0.0.1:7050 -C ch1 -n mycc1 -c '{"Args":["history","VNIT_107"]}'
+# CORE_PEER_ADDRESS=127.0.0.1:7051 peer chaincode invoke -o 127.0.0.1:7050 -C ch1 -n mycc1 -c '{"Args":["update","VNIT_100", "pppp"]}'
+# CORE_PEER_ADDRESS=127.0.0.1:7051 peer chaincode invoke -o 127.0.0.1:7050 -C ch1 -n mycc1 -c '{"Args":["query","VNIT_107"]}'
+# CORE_PEER_ADDRESS=127.0.0.1:7051 peer chaincode invoke -o 127.0.0.1:7050 -C ch1 -n mycc1 -c '{"Args":["invoke","VNIT_107", "jhfh"]}'
+CORE_PEER_ADDRESS=127.0.0.1:7051 peer chaincode invoke -o 127.0.0.1:7050 -C ch1 -n mycc1 -c '{"Args":["delete","VNIT_107"]}'
+# CORE_PEER_ADDRESS=127.0.0.1:7051 peer chaincode invoke -o 127.0.0.1:7050 -C ch1 -n mycc1 -c '{"Args":["history","VNIT_107"]}'
+# CORE_PEER_ADDRESS=127.0.0.1:7051 peer chaincode invoke -o 127.0.0.1:7050 -C ch1 -n mycc1 -c '{"Args":["query","VNIT_107"]}'
