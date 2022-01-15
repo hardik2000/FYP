@@ -1,0 +1,202 @@
+clear
+sudo apt-get install curl
+sudo apt-get update
+sudo apt-get install curl
+sudo apt-get install golang
+sudo nano ~/.bashrc
+source ~/.bashrc
+echo $GOPATH
+sudo apt-get install nodejs
+sudo apt-get install npm
+sudo apt-get install python
+sudo nano ~/.bashrc
+source ~/.bashrc
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu
+$(lsb_release -cs) stable"
+sudo apt-get update
+apt-cache policy docker-ce
+sudo aot-get install -y docker-ce
+sudo apt-get install -y docker-ce
+sudo apt-get install docker-compose
+sudo apt-get upgrade
+wget https://dl.google.com/go/go1.13.x.linux-amd64.tar.gz\
+wget https://dl.google.com/go/go1.13.x.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.13.linux-amd64.tar.gz
+tar -xzvf go1.13.linux-amd64.tar.gz
+sudo mv go/ /usr/local
+sudo nano ~/.bashrc
+source ~/.bashrc
+curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
+sudo apt-get install -y nodejs
+sudo apt-get update
+sudo apt-get upgrade
+curl -V
+npm -v
+docker version
+docker-compose version
+go version
+python -V
+node -v
+mkdir test
+cd test
+curl -sSL https://bit.ly/2ysbOFE | bash -s
+sudo curl -sSL https://bit.ly/2ysbOFE | sudo bash -s
+docker images
+sudo docker images
+ls
+cd fabric-samples/
+cd bin
+ls
+pwd
+sudo nano ~/.bashrc
+cd test/fabric-samples/bin
+pwd
+cat .bash_history > first_terminal.txt
+cat ~/.bash_history > first_terminal.txt
+sudo cat ~/.bash_history > first_terminal.txt
+sudo cat ~/.bash_history 
+sudo cat ~/.bash_history > ~/first_terminal.txt
+clear
+sudo nano ~/.bashrc
+git clone https://github.com/hardik2000/FYP.git
+docker run hello-world
+clear
+sudo chown "$USER":"$USER" /home/"$USER"/.docker -R
+ls /home/testingvm
+ls -a /home/testingvm
+ls ~/etc/
+ls /etc/
+ls -a /etc/
+nano /etc/docker
+cd /etc/docker/
+ls
+ls -a
+cd
+cd BasicNetwork-2.0/
+cd artifacts/
+clear
+docker ps
+clear
+cd ..
+bash createChannel.sh 
+docker exec -it peer0.org1.example.com
+docker exec -it peer0.org1.example.com sh
+ls
+bash deployChaincode.sh 
+ls
+docker-compose down
+cd artifacts/
+docker-compose down
+cp -r /home/testingvm/FYP/test-network/chaincode /home/testingvm/BasicNetwork-2.0/artifacts/src/github.com/
+docker-compose up -d
+cd ..
+clear
+ls
+bash createChannel.sh 
+clear
+bash deployChaincode.sh 
+clear
+bash deployChaincode.sh 
+clear
+ls
+cd artifacts
+docker-compose down
+clear
+cd ..
+mv -r /home/testingvm/BasicNetwork-2.0/artifacts/src/github.com/chaincode /home/testingvm/test/fabric-samples/test-network/
+mv /home/testingvm/BasicNetwork-2.0/artifacts/src/github.com/chaincode /home/testingvm/test/fabric-samples/test-network/
+cd api2.0
+cd api-2.0
+ls
+nodemon app.js
+node app.js
+sudo node app.js
+npm start
+sudo npm start
+sudo node install
+sudo npm install
+clear
+sudo node app.js
+clear
+sudo node app.js
+docker ps
+clear
+cp -r /home/testingvm/FYP/test-network/chaincode /home/testingvm/BasicNetwork-2.0/artifacts/src/github.com/
+clear
+cd ..
+docker-compose up -d
+cd artifacts
+docker-compose up -d
+clear
+bash createChannel.sh
+cd ..
+bash createChannel.sh
+clear
+bash deployChaincode.sh
+clear
+cd /home/testingvm/BasicNetwork-2.0/artifacts/src/github.com/chaincode
+clear
+go mod init main
+mo mod vendor
+go mod vendor
+GO111MODULE=on 
+go mod tidy
+clear
+cd ..
+bash deployChaincode.sh
+clear
+cd api-2.0
+sudo node app.js
+clear
+sudo node app.js
+cd ..
+cd artifacts
+docker-compose down
+exit
+cd test/fabric-samples/bin/
+pwd
+sudo nano ~/.bashrc
+source ~/.bashrc
+peer
+clear
+3cd
+cd 
+clear
+git clone https://github.com/adhavpavan/BasicNetwork-2.0.git
+cd test
+cd
+cd BasicNetwork-2.0/
+ls
+cd artifacts/channel/
+bash create-artifacts.sh 
+clear
+cd ..
+docker componse up -d
+docker compose up -d
+docker campose up -d
+clear
+docker-compose up -d
+docker ps
+sudo docker-compose up -d
+sudo groupadd docker
+sudo usermod -aG docker testingvm
+docker run hello-world
+newgrp docker 
+exit
+cd test/fabric-samples/test-network
+sudo ./network.sh up -ca
+cd chaincode
+got mod vendor
+go mod vendor
+go mod init main
+go mod vendor
+go mod tidy
+./network.sh createChannel
+go mod tidy
+./network.sh createChannel
+sudo ./network.sh createChannel
+sudo ./network.sh deployCC -ccn basic -ccp ./chaincode/ -ccl go
+docker ps
+sudo docker ps
+sudo ./network.sh down
